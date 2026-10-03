@@ -1,16 +1,75 @@
-# React + Vite
+# Assignment 6 - React Counter Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive counter application built with React and Vite showcasing state management with the `useState` hook.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+- **Live URL:** [https://Avdgq2577.github.io/Assignment-6-ReactCounter/](https://Avdgq2577.github.io/Assignment-6-ReactCounter/)
+- **Repository:** [https://github.com/Avdgq2577/Assignment-6-ReactCounter](https://github.com/Avdgq2577/Assignment-6-ReactCounter)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📌 Features
+- **State Management:** Powered by React's `useState` hook.
+- **Increment Action:** Increases the count value by 1 with instant re-rendering.
+- **Decrement Action:** Decreases the count value by 1.
+- **Reset Action:** Resets the counter state back to initial `0`.
+- **Responsive Controls:** Intuitive, centered button group with modern hover effects.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- **React (v19):** Functional component, `useState` hook, and event handlers.
+- **Vite:** Fast, modern frontend build tool.
+- **CSS3:** Flexbox centering, badge counter display, and interactive buttons.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Project Structure
+```text
+Assignment-6-ReactCounter/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml    # GitHub Actions workflow for GitHub Pages
+├── src/
+│   ├── App.css           # Counter card, typography, and button styling
+│   ├── App.jsx           # Counter logic and state handlers
+│   └── main.jsx          # React DOM root entry point
+├── index.html            # Vite HTML template
+├── vite.config.js        # Vite build configuration (base: './')
+├── package.json          # Project dependencies & scripts
+└── README.md             # Project documentation
+```
+
+---
+
+## 💻 Getting Started Locally
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Avdgq2577/Assignment-6-ReactCounter.git
+   ```
+
+2. **Navigate to the directory:**
+   ```bash
+   cd Assignment-6-ReactCounter
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Start the local development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 🌐 Deployment
+Automated via **GitHub Actions** (`.github/workflows/deploy.yml`) on every push to `main`.
